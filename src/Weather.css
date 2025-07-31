@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #3a7bd5, #00d2ff, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app-container {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  max-width: 400px;
+  margin: auto;
+}
+
+.weather-card input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  width: 70%;
+  font-size: 16px;
+}
+
+.weather-card button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4facfe;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.3s ease;
+}
+
+.weather-card button:hover {
+  background-color: #00c6ff;
+}
+
+.weather-card h2 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.weather-card p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
