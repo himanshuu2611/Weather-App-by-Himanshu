@@ -63,6 +63,12 @@ export default function Weather() {
           </div>
         )}
       </form>
+       <footer className="footer">
+  <p>
+    🌤️ <strong>Weather App</strong> by <a href="https://github.com/himanshuu2611" target="_blank" rel="noopener noreferrer">Himanshu Tiwari</a> &nbsp;|&nbsp; Built with 💙 React + OpenWeatherMap API
+  </p>
+</footer>
+
     </div>
   );
 }
